@@ -67,4 +67,4 @@ It will:
 
 ---
 
-If this helped you automate all your manual terminal setup, consider giving this repository a star — it helps me and others find it more easily!
+### If this helped you automate all your manual terminal setup, consider giving this repository a star — it helps me and others find it more easily!
