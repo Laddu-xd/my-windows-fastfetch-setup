@@ -24,7 +24,7 @@ Works on both **PowerShell** and **CMD**.
 
 1. Clone the repo
 ```
-git clone https://github.com/YOURUSERNAME/my-windows-fastfetch-setup
+https://github.com/Laddu-xd/my-windows-fastfetch-setup
 ```
 
 2. Open the folder and double-click `runMe.bat`
