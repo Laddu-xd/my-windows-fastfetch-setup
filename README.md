@@ -22,7 +22,7 @@ Works on both **PowerShell** and **CMD**.
 
 ## Install
 
-1. Clone the repo
+1. Clone the repo [or] download this repo zip and extract
 ```
 https://github.com/Laddu-xd/my-windows-fastfetch-setup
 ```
