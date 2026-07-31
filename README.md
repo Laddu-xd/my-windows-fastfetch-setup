@@ -16,7 +16,7 @@ Works on both **PowerShell** and **CMD**.
 | `cmd_profile.bat` | CMD profile (runs fastfetch on startup) |
 | `JetBrainsMonoNerdFont-Regular.ttf` | JetBrains Mono Nerd Font |
 | `runMe.bat` | Install script |
-| `reset.bat` | Reset script |
+| `reset.bat` | Reset script / Revert back changes |
 
 ---
 
