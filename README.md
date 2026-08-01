@@ -1,4 +1,4 @@
-# my-windows-fastfetch-setup
+# quick-windows-terminal-rice
 
 Set up my personal Windows terminal setup using [Fastfetch](https://github.com/fastfetch-cli/fastfetch) in just one click.
 
