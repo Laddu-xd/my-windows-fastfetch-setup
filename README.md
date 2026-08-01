@@ -24,7 +24,7 @@ Works on both **PowerShell** and **CMD**.
 
 1. Clone the repo [or] download this repo zip and extract
 ```
-https://github.com/Laddu-xd/my-windows-fastfetch-setup
+https://github.com/Laddu-xd/quick-windows-terminal-rice
 ```
 
 2. Open the folder and double-click `runMe.bat`
