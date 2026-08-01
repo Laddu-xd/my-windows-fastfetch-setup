@@ -1,10 +1,11 @@
 @echo off
+cd /d "%~dp0"
 
-:: Request admin privileges
+:: Auto-elevate to admin
 net session >nul 2>&1
 if %errorlevel% neq 0 (
-    echo Please run this script as Administrator!
-    pause
+    echo Requesting Administrator privileges...
+    powershell -Command "Start-Process '%~f0' -Verb RunAs"
     exit
 )
 
@@ -24,6 +25,9 @@ reg delete "HKCU\Software\Microsoft\Command Processor" /v AutoRun /f
 :: Remove JetBrains Mono Nerd Font
 del /F /Q "%WINDIR%\Fonts\JetBrainsMonoNerdFont-Regular.ttf"
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts" /v "JetBrainsMono Nerd Font Regular" /f
+
+:: Revert PowerShell execution policy
+powershell -Command "Set-ExecutionPolicy Restricted -Scope CurrentUser -Force"
 
 echo Done! Restart your terminal.
 pause
