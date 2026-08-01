@@ -1,6 +1,6 @@
 # my-windows-fastfetch-setup
 
-My personal Windows terminal setup using [Fastfetch](https://github.com/fastfetch-cli/fastfetch).
+Set up my personal Windows terminal setup using [Fastfetch](https://github.com/fastfetch-cli/fastfetch) in just one click.
 
 Works on both **PowerShell** and **CMD**.
 
