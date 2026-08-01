@@ -42,13 +42,13 @@ That's it! Restart your terminal and it should work.
 - Copies `cmd_profile.bat` to `%USERPROFILE%\.config\`
 - Adds a registry entry so CMD runs `cmd_profile.bat` on startup
 
-> **Note:** Run `runMe.bat` as Administrator, otherwise font installation will fail.
+> **Note:** `runMe.bat` will run as Administrator, otherwise it will fail.
 
 ---
 
 ## Reset
 
-Run `reset.bat` as Administrator to revert everything.
+Run `reset.bat` o revert everything. [it will prompt you to run as Administrator, ]
 
 It will:
 - Delete the fastfetch config and ASCII file
