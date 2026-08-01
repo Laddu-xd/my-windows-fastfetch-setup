@@ -1,10 +1,11 @@
 @echo off
+cd /d "%~dp0"
 
-:: Request admin privileges
+:: Auto-elevate to admin
 net session >nul 2>&1
 if %errorlevel% neq 0 (
-    echo Please run this script as Administrator!
-    pause
+    echo Requesting Administrator privileges...
+    powershell -Command "Start-Process '%~f0' -Verb RunAs"
     exit
 )
 
@@ -31,9 +32,12 @@ if not exist "%USERPROFILE%\.config\fastfetch" mkdir "%USERPROFILE%\.config\fast
 copy /Y "config.jsonc" "%USERPROFILE%\.config\fastfetch\config.jsonc"
 copy /Y "bb.txt" "%USERPROFILE%\.config\fastfetch\bb.txt"
 
-:: Copy PowerShell profile
+:: Copy PowerShell profile , Removes Zone.Identifier followed by Setting ExecutionPolicy
 if not exist "%USERPROFILE%\Documents\WindowsPowerShell" mkdir "%USERPROFILE%\Documents\WindowsPowerShell"
 copy /Y "profile.ps1" "%USERPROFILE%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
+echo.>"%USERPROFILE%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1:Zone.Identifier"
+powershell -Command "Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force"
+
 
 :: Copy CMD profile and register it
 copy /Y "cmd_profile.bat" "%USERPROFILE%\.config\cmd_profile.bat"
