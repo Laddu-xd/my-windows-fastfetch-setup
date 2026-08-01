@@ -48,7 +48,7 @@ That's it! Restart your terminal and it should work.
 
 ## Reset
 
-Run `reset.bat` o revert everything. [it will prompt you to run as Administrator, ]
+Run `reset.bat` to revert changes done by `runMe.bat`. (it will prompt you to run as Administrator)
 
 It will:
 - Delete the fastfetch config and ASCII file
@@ -65,6 +65,12 @@ It will:
 - winget (comes pre-installed on Windows 10/11)
 - Administrator privileges to run `runMe.bat` and `reset.bat`
 
+---
+ 
+## Trust & Safety
+ 
+Don't worry about running these scripts as Administrator — they do not perform any malicious or suspicious activity. All they do is copy files to their correct locations, install a font, and set a few registry entries. If you're curious enough to worry, feel free to open the `.bat` files in any text editor and verify everything yourself before running.
+ 
 ---
 
 ### If this helped you automate all your manual terminal setup, consider giving this repository a star — it helps me and others find it more easily!
