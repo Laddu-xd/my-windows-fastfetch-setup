@@ -23,8 +23,8 @@ Works on both **PowerShell** and **CMD**.
 ## Install
 
 1. Clone the repo [or] download this repo zip and extract
-```
-https://github.com/Laddu-xd/quick-windows-terminal-rice
+```bash
+git clone https://github.com/Laddu-xd/quick-windows-terminal-rice.git
 ```
 
 2. Open the folder and double-click `runMe.bat`
